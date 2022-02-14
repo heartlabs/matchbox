@@ -360,7 +360,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "16afceed8bd55b372711b870ec33caa2d2c901b708490674455088e2b167f667"
 dependencies = [
  "bevy",
- "ggrs",
+ "ggrs 0.8.0",
  "instant",
 ]
 
@@ -1472,6 +1472,22 @@ dependencies = [
 ]
 
 [[package]]
+name = "ggrs"
+version = "0.9.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8bbd6c40aa646c31c21c4a0010edda595a601419bab7b8a909823d7acbeb4c40"
+dependencies = [
+ "bincode",
+ "bitfield-rle",
+ "bytemuck",
+ "instant",
+ "js-sys",
+ "parking_lot",
+ "rand",
+ "serde",
+]
+
+[[package]]
 name = "gimli"
 version = "0.26.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1925,7 +1941,7 @@ dependencies = [
  "clap",
  "console_error_panic_hook",
  "console_log",
- "ggrs",
+ "ggrs 0.8.0",
  "log",
  "matchbox_socket",
  "serde",
@@ -1960,7 +1976,7 @@ dependencies = [
  "futures",
  "futures-channel",
  "futures-util",
- "ggrs",
+ "ggrs 0.9.1",
  "js-sys",
  "log",
  "serde",
