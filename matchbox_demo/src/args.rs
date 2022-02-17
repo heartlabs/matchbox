@@ -10,8 +10,8 @@ use std::ffi::OsString;
     rename_all_env = "screaming-snake"
 )]
 pub struct Args {
-    // #[clap(default_value = "wss://match.johanhelsing.studio")]
-    #[clap(default_value = "ws://127.0.0.1:3536")]
+    #[clap(default_value = "wss://match-0-4.helsing.studio")]
+    // #[clap(default_value = "ws://127.0.0.1:3536")]
     pub matchbox: String,
 
     pub room: Option<String>,
